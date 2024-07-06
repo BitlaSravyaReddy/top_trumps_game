@@ -50,5 +50,16 @@ def run():
          print('Incorrect option ,please check the spelling')
          
          return None
-rounds()
+def main():
+    print("Lets begin the game") 
+    reply = 'y'
+    while reply == 'y':
+        rounds()
+        print('Do you want to play again? (Y/N)')
+        reply = input().lower()
+    print('Hope you enjoyed! ')
+    print('😃')
+
+main()             
+
 
